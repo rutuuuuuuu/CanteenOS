@@ -1,0 +1,65 @@
+# ==========================================
+# CanteenOS — .gitignore
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Local SQLite Databases & Session Tokens (Never commit live operational data)
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/.remember_token
+backups/*.db
+backups/*.sqlite
+backups/*.sqlite3
+
+# Preserve folder structure with .gitkeep
+!data/.gitkeep
+!reports/.gitkeep
+!backups/.gitkeep
+!models/.gitkeep
+!assets/.gitkeep
+
+# Note on Machine Learning Artifacts:
+# models/best_demand_model.joblib (1.5 MB), models/model_metadata.json, and
+# models/preprocessor.joblib are required by the application runtime and are tracked.
+
+# Generated Exports and Reports
+reports/*.csv
+reports/*.xlsx
+reports/*.pdf
+
+# Local Environment Variables & Streamlit Private Secrets
+.env
+.env.local
+.env.*
+.streamlit/secrets.toml
+
+# Log files and temporary files
+*.log
+*.tmp
+temp/
+scratch/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,36 @@
+ingredient_id,ingredient_name,unit,unit_cost,reorder_level,target_stock,is_active
+ING_0001,Basmati Rice,kg,75.0,50.0,200.0,True
+ING_0002,Wheat Flour (Atta),kg,42.0,60.0,250.0,True
+ING_0003,Potatoes,kg,25.0,40.0,180.0,True
+ING_0004,Onions,kg,35.0,35.0,150.0,True
+ING_0005,Tomatoes,kg,40.0,30.0,120.0,True
+ING_0006,Refined Cooking Oil,L,125.0,30.0,150.0,True
+ING_0007,Fresh Milk,L,56.0,40.0,160.0,True
+ING_0008,Sugar,kg,45.0,25.0,100.0,True
+ING_0009,Tea Powder,kg,320.0,10.0,40.0,True
+ING_0010,Coffee Powder,kg,550.0,5.0,20.0,True
+ING_0011,Paneer (Cottage Cheese),kg,340.0,15.0,60.0,True
+ING_0012,Toor Dal (Pigeon Pea),kg,145.0,25.0,100.0,True
+ING_0013,Urad Dal (Black Gram),kg,130.0,20.0,80.0,True
+ING_0014,Chana Dal (Bengal Gram),kg,95.0,20.0,80.0,True
+ING_0015,Kabuli Chana (Chickpeas),kg,135.0,20.0,80.0,True
+ING_0016,Rajma (Kidney Beans),kg,140.0,15.0,70.0,True
+ING_0017,Flattened Rice (Poha),kg,55.0,15.0,60.0,True
+ING_0018,Semolina (Rava/Suji),kg,48.0,15.0,60.0,True
+ING_0019,Burger Buns,pcs,6.0,50.0,200.0,True
+ING_0020,Pav Bread,pcs,4.0,100.0,400.0,True
+ING_0021,Sandwich Bread Slices,pcs,2.5,100.0,400.0,True
+ING_0022,Cheese Slices & Block,kg,480.0,8.0,30.0,True
+ING_0023,Noodles Pack,kg,85.0,15.0,60.0,True
+ING_0024,Green Chillies & Ginger,kg,90.0,5.0,25.0,True
+ING_0025,Spices & Masalas Mix,kg,260.0,8.0,35.0,True
+ING_0026,Curd / Yogurt,kg,65.0,20.0,80.0,True
+ING_0027,Lemons,pcs,5.0,50.0,250.0,True
+ING_0028,Mango Pulp / Puree,kg,180.0,10.0,40.0,True
+ING_0029,Mixed Vegetables,kg,50.0,25.0,100.0,True
+ING_0030,Gulab Jamun Mix / Mawa,kg,240.0,10.0,40.0,True
+ING_0031,Ice Cream Mix,kg,200.0,10.0,40.0,True
+ING_0032,Butter & Ghee,kg,490.0,10.0,40.0,True
+ING_0033,Test Saffron,g,250.0,50.0,200.0,True
+ING_0034,Test Saffron,g,250.0,50.0,200.0,True
+ING_0035,Test Saffron,g,250.0,50.0,200.0,True

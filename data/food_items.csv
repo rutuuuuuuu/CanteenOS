@@ -1,0 +1,55 @@
+food_id,food_name,category,selling_price,is_active
+FOOD_0001,Masala Dosa,Breakfast,60.0,True
+FOOD_0002,Idli Sambhar (2 pcs),Breakfast,40.0,True
+FOOD_0003,Poha,Breakfast,30.0,True
+FOOD_0004,Upma,Breakfast,30.0,True
+FOOD_0005,Medu Vada (2 pcs),Breakfast,45.0,True
+FOOD_0006,Aloo Paratha,Breakfast,50.0,True
+FOOD_0007,Plain Dosa,South Indian,45.0,True
+FOOD_0008,Onion Uttapam,South Indian,55.0,True
+FOOD_0009,Rava Dosa,South Indian,65.0,True
+FOOD_0010,Curd Rice,South Indian,50.0,True
+FOOD_0011,Lemon Rice,South Indian,50.0,True
+FOOD_0012,Samosa (2 pcs),Snacks,30.0,True
+FOOD_0013,Vada Pav,Snacks,20.0,True
+FOOD_0014,Bread Pakora,Snacks,25.0,True
+FOOD_0015,Veg Cutlet (2 pcs),Snacks,35.0,True
+FOOD_0016,Kachori (2 pcs),Snacks,30.0,True
+FOOD_0017,Bhel Puri,Snacks,40.0,True
+FOOD_0018,Sev Puri,Snacks,45.0,True
+FOOD_0019,Special Veg Thali,Meals & Thalis,120.0,True
+FOOD_0020,Standard Mini Thali,Meals & Thalis,80.0,True
+FOOD_0021,Dal Makhani with Rice,Meals & Thalis,90.0,True
+FOOD_0022,Rajma Chawal,Meals & Thalis,85.0,True
+FOOD_0023,Chole Bhature (2 pcs),Meals & Thalis,80.0,True
+FOOD_0024,Paneer Butter Masala Combo,Meals & Thalis,130.0,True
+FOOD_0025,Veg Biryani,Rice Dishes,100.0,True
+FOOD_0026,Veg Fried Rice,Rice Dishes,75.0,True
+FOOD_0027,Jeera Rice with Dal Tadka,Rice Dishes,80.0,True
+FOOD_0028,Schezwan Fried Rice,Rice Dishes,85.0,True
+FOOD_0029,Pulao with Raita,Rice Dishes,85.0,True
+FOOD_0030,Paneer Kulcha,North Indian,60.0,True
+FOOD_0031,Butter Roti with Mix Veg,North Indian,75.0,True
+FOOD_0032,Aloo Gobi with 3 Chapatis,North Indian,70.0,True
+FOOD_0033,Dal Fry with 3 Chapatis,North Indian,65.0,True
+FOOD_0034,Veg Burger,Fast Food,50.0,True
+FOOD_0035,Cheese Sandwich,Fast Food,45.0,True
+FOOD_0036,Veg Hakka Noodles,Fast Food,70.0,True
+FOOD_0037,Schezwan Noodles,Fast Food,75.0,True
+FOOD_0038,French Fries,Fast Food,50.0,True
+FOOD_0039,Veg Spring Rolls,Fast Food,60.0,True
+FOOD_0040,Masala Chai,Beverages,15.0,True
+FOOD_0041,Filter Coffee,Beverages,20.0,True
+FOOD_0042,Cold Coffee,Beverages,40.0,True
+FOOD_0043,Fresh Lemonade,Beverages,25.0,True
+FOOD_0044,Sweet Lassi,Beverages,35.0,True
+FOOD_0045,Mango Shake,Beverages,50.0,True
+FOOD_0046,Veg Puff,Bakery,25.0,True
+FOOD_0047,Paneer Puff,Bakery,35.0,True
+FOOD_0048,Butter Croissant,Bakery,45.0,True
+FOOD_0049,Gulab Jamun (2 pcs),Desserts,40.0,True
+FOOD_0050,Rasgulla (2 pcs),Desserts,40.0,True
+FOOD_0051,Ice Cream Cup,Desserts,30.0,True
+FOOD_0052,Test Veg Roll Deluxe,Snacks,55.0,True
+FOOD_0053,Test Veg Roll Deluxe,Snacks,55.0,True
+FOOD_0054,Test Veg Roll Deluxe,Snacks,55.0,True

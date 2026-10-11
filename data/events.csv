@@ -1,0 +1,145 @@
+event_id,date,event_name,event_type,is_exam_period,expected_attendance
+EVT_0001,2023-10-10,Alumni Homecoming,Campus Event,False,2200
+EVT_0002,2023-11-15,Semester Examination 2023,Exams,True,2500
+EVT_0003,2023-11-16,Semester Examination 2023,Exams,True,2500
+EVT_0004,2023-11-17,Semester Examination 2023,Exams,True,2500
+EVT_0005,2023-11-18,Semester Examination 2023,Exams,True,2500
+EVT_0006,2023-11-19,Semester Examination 2023,Exams,True,2500
+EVT_0007,2023-11-20,Semester Examination 2023,Exams,True,2500
+EVT_0008,2023-11-21,Semester Examination 2023,Exams,True,2500
+EVT_0009,2023-11-22,Semester Examination 2023,Exams,True,2500
+EVT_0010,2023-11-23,Semester Examination 2023,Exams,True,2500
+EVT_0011,2023-11-24,Semester Examination 2023,Exams,True,2500
+EVT_0012,2023-11-25,Semester Examination 2023,Exams,True,2500
+EVT_0013,2023-11-26,Semester Examination 2023,Exams,True,2500
+EVT_0014,2023-11-27,Semester Examination 2023,Exams,True,2500
+EVT_0015,2023-11-28,Semester Examination 2023,Exams,True,2500
+EVT_0016,2023-11-29,Semester Examination 2023,Exams,True,2500
+EVT_0017,2023-11-30,Semester Examination 2023,Exams,True,2500
+EVT_0018,2024-01-26,Republic Day Celebration,National Event,False,1500
+EVT_0019,2024-02-14,Annual Cultural Fest - Day 1,Cultural Fest,False,3500
+EVT_0020,2024-02-15,Annual Cultural Fest - Day 2,Cultural Fest,False,4000
+EVT_0021,2024-02-20,Semester Examination 2024,Exams,True,2500
+EVT_0022,2024-02-21,Semester Examination 2024,Exams,True,2500
+EVT_0023,2024-02-22,Semester Examination 2024,Exams,True,2500
+EVT_0024,2024-02-23,Semester Examination 2024,Exams,True,2500
+EVT_0025,2024-02-24,Semester Examination 2024,Exams,True,2500
+EVT_0026,2024-02-25,Semester Examination 2024,Exams,True,2500
+EVT_0027,2024-02-26,Semester Examination 2024,Exams,True,2500
+EVT_0028,2024-02-27,Semester Examination 2024,Exams,True,2500
+EVT_0029,2024-02-28,Semester Examination 2024,Exams,True,2500
+EVT_0030,2024-03-20,Tech Horizon - Tech Fest,Technical Fest,False,3200
+EVT_0031,2024-04-15,Semester Examination 2024,Exams,True,2500
+EVT_0032,2024-04-16,Semester Examination 2024,Exams,True,2500
+EVT_0033,2024-04-17,Semester Examination 2024,Exams,True,2500
+EVT_0034,2024-04-18,Semester Examination 2024,Exams,True,2500
+EVT_0035,2024-04-19,Semester Examination 2024,Exams,True,2500
+EVT_0036,2024-04-20,Semester Examination 2024,Exams,True,2500
+EVT_0037,2024-04-21,Semester Examination 2024,Exams,True,2500
+EVT_0038,2024-04-22,Semester Examination 2024,Exams,True,2500
+EVT_0039,2024-04-23,Semester Examination 2024,Exams,True,2500
+EVT_0040,2024-04-24,Semester Examination 2024,Exams,True,2500
+EVT_0041,2024-04-25,Semester Examination 2024,Exams,True,2500
+EVT_0042,2024-04-26,Semester Examination 2024,Exams,True,2500
+EVT_0043,2024-04-27,Semester Examination 2024,Exams,True,2500
+EVT_0044,2024-04-28,Semester Examination 2024,Exams,True,2500
+EVT_0045,2024-04-29,Semester Examination 2024,Exams,True,2500
+EVT_0046,2024-04-30,Semester Examination 2024,Exams,True,2500
+EVT_0047,2024-08-15,Independence Day Program,National Event,False,1800
+EVT_0048,2024-09-25,Annual Inter-College Sports Meet,Sports Meet,False,3000
+EVT_0049,2024-10-10,Alumni Homecoming,Campus Event,False,2200
+EVT_0050,2024-11-15,Semester Examination 2024,Exams,True,2500
+EVT_0051,2024-11-16,Semester Examination 2024,Exams,True,2500
+EVT_0052,2024-11-17,Semester Examination 2024,Exams,True,2500
+EVT_0053,2024-11-18,Semester Examination 2024,Exams,True,2500
+EVT_0054,2024-11-19,Semester Examination 2024,Exams,True,2500
+EVT_0055,2024-11-20,Semester Examination 2024,Exams,True,2500
+EVT_0056,2024-11-21,Semester Examination 2024,Exams,True,2500
+EVT_0057,2024-11-22,Semester Examination 2024,Exams,True,2500
+EVT_0058,2024-11-23,Semester Examination 2024,Exams,True,2500
+EVT_0059,2024-11-24,Semester Examination 2024,Exams,True,2500
+EVT_0060,2024-11-25,Semester Examination 2024,Exams,True,2500
+EVT_0061,2024-11-26,Semester Examination 2024,Exams,True,2500
+EVT_0062,2024-11-27,Semester Examination 2024,Exams,True,2500
+EVT_0063,2024-11-28,Semester Examination 2024,Exams,True,2500
+EVT_0064,2024-11-29,Semester Examination 2024,Exams,True,2500
+EVT_0065,2024-11-30,Semester Examination 2024,Exams,True,2500
+EVT_0066,2025-01-26,Republic Day Celebration,National Event,False,1500
+EVT_0067,2025-02-14,Annual Cultural Fest - Day 1,Cultural Fest,False,3500
+EVT_0068,2025-02-15,Annual Cultural Fest - Day 2,Cultural Fest,False,4000
+EVT_0069,2025-02-20,Semester Examination 2025,Exams,True,2500
+EVT_0070,2025-02-21,Semester Examination 2025,Exams,True,2500
+EVT_0071,2025-02-22,Semester Examination 2025,Exams,True,2500
+EVT_0072,2025-02-23,Semester Examination 2025,Exams,True,2500
+EVT_0073,2025-02-24,Semester Examination 2025,Exams,True,2500
+EVT_0074,2025-02-25,Semester Examination 2025,Exams,True,2500
+EVT_0075,2025-02-26,Semester Examination 2025,Exams,True,2500
+EVT_0076,2025-02-27,Semester Examination 2025,Exams,True,2500
+EVT_0077,2025-02-28,Semester Examination 2025,Exams,True,2500
+EVT_0078,2025-03-20,Tech Horizon - Tech Fest,Technical Fest,False,3200
+EVT_0079,2025-04-15,Semester Examination 2025,Exams,True,2500
+EVT_0080,2025-04-16,Semester Examination 2025,Exams,True,2500
+EVT_0081,2025-04-17,Semester Examination 2025,Exams,True,2500
+EVT_0082,2025-04-18,Semester Examination 2025,Exams,True,2500
+EVT_0083,2025-04-19,Semester Examination 2025,Exams,True,2500
+EVT_0084,2025-04-20,Semester Examination 2025,Exams,True,2500
+EVT_0085,2025-04-21,Semester Examination 2025,Exams,True,2500
+EVT_0086,2025-04-22,Semester Examination 2025,Exams,True,2500
+EVT_0087,2025-04-23,Semester Examination 2025,Exams,True,2500
+EVT_0088,2025-04-24,Semester Examination 2025,Exams,True,2500
+EVT_0089,2025-04-25,Semester Examination 2025,Exams,True,2500
+EVT_0090,2025-04-26,Semester Examination 2025,Exams,True,2500
+EVT_0091,2025-04-27,Semester Examination 2025,Exams,True,2500
+EVT_0092,2025-04-28,Semester Examination 2025,Exams,True,2500
+EVT_0093,2025-04-29,Semester Examination 2025,Exams,True,2500
+EVT_0094,2025-04-30,Semester Examination 2025,Exams,True,2500
+EVT_0095,2025-08-15,Independence Day Program,National Event,False,1800
+EVT_0096,2025-09-25,Annual Inter-College Sports Meet,Sports Meet,False,3000
+EVT_0097,2025-10-10,Alumni Homecoming,Campus Event,False,2200
+EVT_0098,2025-11-15,Semester Examination 2025,Exams,True,2500
+EVT_0099,2025-11-16,Semester Examination 2025,Exams,True,2500
+EVT_0100,2025-11-17,Semester Examination 2025,Exams,True,2500
+EVT_0101,2025-11-18,Semester Examination 2025,Exams,True,2500
+EVT_0102,2025-11-19,Semester Examination 2025,Exams,True,2500
+EVT_0103,2025-11-20,Semester Examination 2025,Exams,True,2500
+EVT_0104,2025-11-21,Semester Examination 2025,Exams,True,2500
+EVT_0105,2025-11-22,Semester Examination 2025,Exams,True,2500
+EVT_0106,2025-11-23,Semester Examination 2025,Exams,True,2500
+EVT_0107,2025-11-24,Semester Examination 2025,Exams,True,2500
+EVT_0108,2025-11-25,Semester Examination 2025,Exams,True,2500
+EVT_0109,2025-11-26,Semester Examination 2025,Exams,True,2500
+EVT_0110,2025-11-27,Semester Examination 2025,Exams,True,2500
+EVT_0111,2025-11-28,Semester Examination 2025,Exams,True,2500
+EVT_0112,2025-11-29,Semester Examination 2025,Exams,True,2500
+EVT_0113,2025-11-30,Semester Examination 2025,Exams,True,2500
+EVT_0114,2026-01-26,Republic Day Celebration,National Event,False,1500
+EVT_0115,2026-02-14,Annual Cultural Fest - Day 1,Cultural Fest,False,3500
+EVT_0116,2026-02-15,Annual Cultural Fest - Day 2,Cultural Fest,False,4000
+EVT_0117,2026-02-20,Semester Examination 2026,Exams,True,2500
+EVT_0118,2026-02-21,Semester Examination 2026,Exams,True,2500
+EVT_0119,2026-02-22,Semester Examination 2026,Exams,True,2500
+EVT_0120,2026-02-23,Semester Examination 2026,Exams,True,2500
+EVT_0121,2026-02-24,Semester Examination 2026,Exams,True,2500
+EVT_0122,2026-02-25,Semester Examination 2026,Exams,True,2500
+EVT_0123,2026-02-26,Semester Examination 2026,Exams,True,2500
+EVT_0124,2026-02-27,Semester Examination 2026,Exams,True,2500
+EVT_0125,2026-02-28,Semester Examination 2026,Exams,True,2500
+EVT_0126,2026-03-20,Tech Horizon - Tech Fest,Technical Fest,False,3200
+EVT_0127,2026-04-15,Semester Examination 2026,Exams,True,2500
+EVT_0128,2026-04-16,Semester Examination 2026,Exams,True,2500
+EVT_0129,2026-04-17,Semester Examination 2026,Exams,True,2500
+EVT_0130,2026-04-18,Semester Examination 2026,Exams,True,2500
+EVT_0131,2026-04-19,Semester Examination 2026,Exams,True,2500
+EVT_0132,2026-04-20,Semester Examination 2026,Exams,True,2500
+EVT_0133,2026-04-21,Semester Examination 2026,Exams,True,2500
+EVT_0134,2026-04-22,Semester Examination 2026,Exams,True,2500
+EVT_0135,2026-04-23,Semester Examination 2026,Exams,True,2500
+EVT_0136,2026-04-24,Semester Examination 2026,Exams,True,2500
+EVT_0137,2026-04-25,Semester Examination 2026,Exams,True,2500
+EVT_0138,2026-04-26,Semester Examination 2026,Exams,True,2500
+EVT_0139,2026-04-27,Semester Examination 2026,Exams,True,2500
+EVT_0140,2026-04-28,Semester Examination 2026,Exams,True,2500
+EVT_0141,2026-04-29,Semester Examination 2026,Exams,True,2500
+EVT_0142,2026-04-30,Semester Examination 2026,Exams,True,2500
+EVT_0143,2026-08-15,Independence Day Program,National Event,False,1800
+EVT_0144,2026-09-25,Annual Inter-College Sports Meet,Sports Meet,False,3000

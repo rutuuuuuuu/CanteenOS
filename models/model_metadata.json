@@ -1,0 +1,102 @@
+{
+  "best_model_name": "Random Forest Regressor",
+  "model_version": "v1.0",
+  "trained_at": "2026-10-09 22:11:06",
+  "total_records": 1210,
+  "date_ranges": {
+    "train": [
+      "2026-06-11",
+      "2026-08-21"
+    ],
+    "val": [
+      "2026-08-22",
+      "2026-09-14"
+    ],
+    "test": [
+      "2026-09-15",
+      "2026-10-09"
+    ]
+  },
+  "candidate_comparisons": {
+    "Historical Weekday Baseline": {
+      "validation_metrics": {
+        "mae": 20.587,
+        "rmse": 26.671,
+        "r2": 0.577
+      },
+      "train_metrics": {
+        "mae": 22.018,
+        "rmse": 28.514,
+        "r2": 0.528
+      }
+    },
+    "Linear Regression (Ridge)": {
+      "validation_metrics": {
+        "mae": 7.153,
+        "rmse": 9.553,
+        "r2": 0.946
+      },
+      "train_metrics": {
+        "mae": 8.09,
+        "rmse": 11.471,
+        "r2": 0.924
+      }
+    },
+    "Random Forest Regressor": {
+      "validation_metrics": {
+        "mae": 5.992,
+        "rmse": 8.785,
+        "r2": 0.954
+      },
+      "train_metrics": {
+        "mae": 3.066,
+        "rmse": 4.265,
+        "r2": 0.989
+      }
+    },
+    "HistGradientBoosting Regressor": {
+      "validation_metrics": {
+        "mae": 6.091,
+        "rmse": 8.84,
+        "r2": 0.953
+      },
+      "train_metrics": {
+        "mae": 4.27,
+        "rmse": 6.392,
+        "r2": 0.976
+      }
+    }
+  },
+  "champion_validation_mae": 5.992,
+  "champion_test_metrics": {
+    "mae": 6.177,
+    "rmse": 8.282,
+    "r2": 0.959
+  },
+  "feature_columns": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "year",
+    "is_weekend",
+    "is_exam_period",
+    "selling_price",
+    "sales_lag_1",
+    "sales_lag_7",
+    "sales_lag_14",
+    "sales_roll_mean_7",
+    "sales_roll_std_7",
+    "sales_roll_mean_14",
+    "weekday_avg_sales",
+    "cat_Breakfast",
+    "cat_Snacks",
+    "cat_Meals_and_Thalis",
+    "cat_Rice_Dishes",
+    "cat_South_Indian",
+    "cat_North_Indian",
+    "cat_Beverages",
+    "cat_Bakery",
+    "cat_Fast_Food",
+    "cat_Desserts"
+  ]
+}
