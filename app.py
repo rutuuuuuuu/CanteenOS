@@ -38,9 +38,10 @@ from prediction import (
 )
 from preparation import (
     calculate_ingredient_requirements,
+    confirm_preparation_plan,
     get_preparations_history
 )
-from inventory import get_stock_alerts
+from inventory import get_stock_alerts, get_stock_movement_history
 from waste import (
     get_waste_reduction_kpis,
     get_waste_monitoring_table,
@@ -605,6 +606,31 @@ elif active_section == "Demand Forecast":
                 width="stretch",
                 hide_index=True
             )
+            
+            # Confirm Preparation Batch
+            st.markdown("---")
+            st.markdown("### 🍳 Confirm Kitchen Preparation Batch")
+            st.caption("Confirming preparation creates cooking batches and automatically deducts required ingredients from inventory.")
+            
+            with st.form("confirm_prep_batch_form"):
+                col_pb1, col_pb2 = st.columns([3, 1])
+                with col_pb1:
+                    batch_notes = st.text_input("Batch Preparation Notes (Optional)", placeholder="e.g. Morning preparation batch for campus schedule")
+                with col_pb2:
+                    st.write("")
+                    st.write("")
+                    submit_prep = st.form_submit_button("Confirm Batch & Deduct Stock", type="primary", disabled=not is_feasible)
+                    
+                if submit_prep:
+                    if not is_feasible:
+                        st.error("Cannot confirm preparation: Insufficient ingredient stock.")
+                    else:
+                        success, prep_msg, prep_ids = confirm_preparation_plan(tomorrow_str, plan_dict, batch_notes=batch_notes)
+                        if success:
+                            st.success(prep_msg)
+                            st.rerun()
+                        else:
+                            st.error(f"Preparation confirmation failed: {prep_msg}")
     else:
         render_alert("No active food items found to generate demand forecast.", "warning")
 
@@ -690,8 +716,13 @@ elif active_section == "Inventory":
         
     st.markdown("---")
     
-    # Restock, Adjust, and Add New Ingredient Tabs
-    tab_purchase, tab_adjust, tab_new_ing = st.tabs(["📥 Record Stock Receipt / Restock", "⚙️ Manual Stock Adjustment", "➕ Register New Ingredient"])
+    # Restock, Adjust, New Ingredient, and Movement History Tabs
+    tab_purchase, tab_adjust, tab_new_ing, tab_history = st.tabs([
+        "📥 Record Stock Receipt / Restock",
+        "⚙️ Manual Stock Adjustment",
+        "➕ Register New Ingredient",
+        "📜 Movement Audit Log"
+    ])
     
     all_raw_ings = get_ingredients(active_only=True)
     
@@ -805,6 +836,30 @@ elif active_section == "Inventory":
                         st.rerun()
                     else:
                         st.error(f"Error registering ingredient: {res_ing_id}")
+                        
+    # TAB 4: STOCK MOVEMENT AUDIT LOG
+    with tab_history:
+        st.markdown("#### Complete Stock Movement Audit Log")
+        mov_df = get_stock_movement_history(limit=100)
+        if not mov_df.empty:
+            disp_mov = mov_df.copy()
+            st.dataframe(
+                disp_mov.rename(columns={
+                    "movement_id": "Movement ID",
+                    "timestamp": "Timestamp",
+                    "ingredient_id": "Ingredient ID",
+                    "ingredient_name": "Ingredient Name",
+                    "movement_type": "Movement Type",
+                    "quantity": "Quantity",
+                    "unit": "Unit",
+                    "reference_id": "Reference ID",
+                    "notes": "Notes"
+                }),
+                width="stretch",
+                hide_index=True
+            )
+        else:
+            render_alert("No stock movements recorded yet.", "info")
 
 
 # ==========================================
@@ -978,10 +1033,11 @@ elif active_section == "Monthly Reports":
         
     st.markdown("---")
     
-    tab_rep_sales, tab_rep_inv, tab_rep_waste = st.tabs([
+    tab_rep_sales, tab_rep_inv, tab_rep_waste, tab_rep_fc = st.tabs([
         "💰 Sales Summary",
         "🌾 Inventory Movements",
-        "♻️ Preparation & Leftovers"
+        "♻️ Preparation & Leftovers",
+        "🔮 Forecast Accuracy"
     ])
     
     # 1. MONTHLY SALES
@@ -1120,6 +1176,52 @@ elif active_section == "Monthly Reports":
                 st.plotly_chart(fig_prep_bar, width="stretch")
         else:
             render_alert("No records available for this month.", "info")
+            
+    # 4. MONTHLY FORECAST ACCURACY
+    with tab_rep_fc:
+        st.markdown(f"### Monthly Forecast Accuracy & Evaluation — {selected_month}")
+        m_fc = get_monthly_forecast_accuracy(selected_month)
+        
+        if m_fc["matched_count"] > 0:
+            k_fc1, k_fc2, k_fc3 = st.columns(3)
+            with k_fc1:
+                render_kpi_card("Mean Absolute Error (MAE)", f"{m_fc['overall_mae']} servings", "Average deviation from actual", "🎯")
+            with k_fc2:
+                render_kpi_card("Root Mean Sq. Error (RMSE)", f"{m_fc['overall_rmse']} servings", "Penalty-weighted variance", "📐")
+            with k_fc3:
+                render_kpi_card("Mean Percentage Error", f"{m_fc['overall_mape']}%", f"{m_fc['matched_count']} matched predictions", "📊")
+                
+            st.markdown("<div style='margin-top: 14px;'></div>", unsafe_allow_html=True)
+            
+            if not m_fc["daily_comparison"].empty:
+                st.markdown("#### 📈 Predicted vs. Actual Demand Totals")
+                fig_fc_comp = px.line(
+                    m_fc["daily_comparison"],
+                    x="target_date",
+                    y=["predicted_demand", "actual_demand"],
+                    labels={"value": "Total Servings", "target_date": "Date", "variable": "Metric"},
+                    color_discrete_map={"predicted_demand": "#3B82F6", "actual_demand": "#10B981"}
+                )
+                style_plotly_chart(fig_fc_comp)
+                st.plotly_chart(fig_fc_comp, width="stretch")
+                
+            if not m_fc["item_accuracy"].empty:
+                st.markdown("#### 📋 Accuracy Breakdown by Food Item")
+                st.dataframe(
+                    m_fc["item_accuracy"].rename(columns={
+                        "food_id": "Food ID",
+                        "food_name": "Food Item",
+                        "category": "Category",
+                        "predicted_demand": "Total Predicted",
+                        "actual_demand": "Total Actual",
+                        "absolute_error": "Avg Absolute Error",
+                        "percentage_error": "Avg Error %"
+                    }),
+                    width="stretch",
+                    hide_index=True
+                )
+        else:
+            render_alert("No forecast and sales matches found for this month.", "info")
             
     # Database Backup
     st.markdown("---")
